@@ -29,11 +29,11 @@ Queue Service	Zaqar
 ## OpenStack logical architecture
 There are currently seven core components of OpenStack, how they conceptually interact with each other is shown below:
 
-![Architecture 1](images/openstack_logical_architecture1.jpg)  
+[[images/openstack_logical_architecture1.jpg]]
 
 All these components and how they relate each other are shown in the simplest way in the below OpenStack logical architecture : 
 
-![Architecture 2](images/openstack_logical_architecture2.jpg) 
+[[images/openstack_logical_architecture2.jpg]]
 
 
 ## Horizon – Dashboard
@@ -119,11 +119,11 @@ Neutron will interact mainly with Nova, where it will provide networks and conne
 
 Cinder allows block devices to be exposed and connected to compute instances for expanded storage & better performance.
 
-●	cinder-api accepts requests and routes them to cinder-volumes for action
-●	cinder-volume reports reading or writing to the cinder database to maintain state, interacts with other processes (like cinder-scheduler, see below) through a message queue and directly on block storage providing hardware or software
-●	cinder-scheduler picks the optimal block storage node to create the volume on
-●	the messages queue routes information between Cinder processes
-●	a cinder database stores volumes state
+* cinder-api accepts requests and routes them to cinder-volumes for action
+* cinder-volume reports reading or writing to the cinder database to maintain state, interacts with other processes (like cinder-scheduler, see below) through a message queue and directly on block storage providing hardware or software
+* cinder-scheduler picks the optimal block storage node to create the volume on
+* the messages queue routes information between Cinder processes
+* a cinder database stores volumes state
 
  
 
