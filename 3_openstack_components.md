@@ -91,14 +91,8 @@ List of components and their functions:
 
 Glance accepts API requests for images (or image metadata) from end users or Nova components,  and can store its disk files in the object storage service, Swift or other storage repository.
 
- 
 
-
-
- 
-
-
-Neutron – Network
+## Neutron – Network
 
 Neutron provides “network connectivity as a service” between interface devices (e.g., vNICs) managed by other OpenStack services (e.g., Nova). The service works by allowing users to create their own networks and then attach interfaces to them. Neutron has a pluggable architecture to support many popular networking vendors and technologies.
 
