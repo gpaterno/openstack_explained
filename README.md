@@ -1,11 +1,10 @@
-
 # OpenStack Explained: An Introduction to OpenStack Cloud
 
 This e-book aims to explain OpenStack to CIOs and the newcomers to OpenStack.
 
 My aim is to sell the e-book once a year for humanitarian reasons, such as giving the entire revenues to a non profit organization. For this reason PLEASE do not sell the e-book on your own and help me with the project.
 
-* 1st edition provided relief to Nepal after the earthquake of 2015.
+* **1st edition** provided relief to Nepal after the earthquake of 2015.
 
 
 # Table of Contents
