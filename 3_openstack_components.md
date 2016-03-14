@@ -56,15 +56,15 @@ Keystone can be integrated with LDAP and other external authentication providers
 Probably the most known among the projects, it provides virtual servers upon demand. Nova is the most complicated and distributed component of OpenStack. A large number of processes cooperate to turn end user API requests into running virtual machines.
 
 These are the Nova components and their functions:
-●	nova-api : a RESTful API web service which accepts incoming commands to interact with the OpenStack cloud
-●	nova-compute: a worker daemon which creates and terminates virtual machine instances via Hypervisor’s APIs
-●	nova-scheduler: takes a request from the queue and determines which compute server host it should run on
-●	nova-conductor: provides services for nova-compute, such as completing database updates and handling long-running tasks
-●	nova database: stores most of the build-times and run-time states for a cloud infrastructure
-●	The queue provides a central hub for passing messages between daemons. This is usually implemented with RabbitMQ
-●	Nova also provides console services to allow end users to access their virtual instances console through a proxy. This involves several daemons (nova-console, nova-novncproxy and nova-consoleauth)
-●	nova-network : a worker daemon very similar to nova-compute. It accepts networking tasks from the queue and then performs tasks to manipulate the network (such as setting up bridging interfaces or changing iptables rules). This functionality is being migrated to Neutron, a separate OpenStack service
-●	nova-volume : Manages creation, attaching and detaching of persistent volumes to compute instances. This functionality is being migrated to Cinder, a separate OpenStack service.
+* nova-api : a RESTful API web service which accepts incoming commands to interact with the OpenStack cloud
+* nova-compute: a worker daemon which creates and terminates virtual machine instances via Hypervisor’s APIs
+* nova-scheduler: takes a request from the queue and determines which compute server host it should run on
+* nova-conductor: provides services for nova-compute, such as completing database updates and handling long-running tasks
+* nova database: stores most of the build-times and run-time states for a cloud infrastructure
+* The queue provides a central hub for passing messages between daemons. This is usually implemented with RabbitMQ
+* Nova also provides console services to allow end users to access their virtual instances console through a proxy. This involves several daemons (nova-console, nova-novncproxy and nova-consoleauth)
+* nova-network (now Neutron): a worker daemon very similar to nova-compute. It accepts networking tasks from the queue and then performs tasks to manipulate the network (such as setting up bridging interfaces or changing iptables rules). This functionality is being migrated to Neutron, a separate OpenStack service
+* nova-volume (now Cinder): Manages creation, attaching and detaching of persistent volumes to compute instances. This functionality is being migrated to Cinder, a separate OpenStack service.
   
 
 Nova also interacts with many other OpenStack services: Keystone for authentication, Glance for images and Horizon for the web interface. The Glance interactions are central to OpenStack. The API process can upload and query Glance while nova-compute will download images for launching images.
@@ -82,10 +82,10 @@ Nova also supports bare metal provisioning through the Ironic project, that mean
 It provides discovery, registration and delivery services for disk and server images.
 List of components and their functions:
 
-●	glance-api: accepts Image API calls for image discovery, image retrieval and image storage
-●	glance-registry: stores, processes and retrieves metadata about images (size, type, etc.)
-●	glance database: a database to store the image metadata
-●	A storage repository for the actual image files. Glance supports normal filesystems, Ceph block devices, Amazon S3, HTTP and Swift.
+* glance-api: accepts Image API calls for image discovery, image retrieval and image storage
+* glance-registry: stores, processes and retrieves metadata about images (size, type, etc.)
+* glance database: a database to store the image metadata
+* A storage repository for the actual image files. Glance supports normal filesystems, Ceph block devices, Amazon S3, HTTP and Swift.
 
 Glance accepts API requests for images (or image metadata) from end users or Nova components,  and can store its disk files in the object storage service, Swift or other storage repository.
 
@@ -100,10 +100,10 @@ Neutron – Network
 
 Neutron provides “network connectivity as a service” between interface devices (e.g., vNICs) managed by other OpenStack services (e.g., Nova). The service works by allowing users to create their own networks and then attach interfaces to them. Neutron has a pluggable architecture to support many popular networking vendors and technologies.
 
-●	neutron-server accept API requests and routes them to the correct neutron plugin
-●	plugins and agents perform actual actions, like plug/unplug ports, creating networks, subnets and IP addressing
-●	it also has a message queue to route info between neutron-server and various agents
-●	it has a neutron database to store networking state for particular plugins
+* neutron-server accept API requests and routes them to the correct neutron plugin
+* plugins and agents perform actual actions, like plug/unplug ports, creating networks, subnets and IP addressing
+* it also has a message queue to route info between neutron-server and various agents
+* it has a neutron database to store networking state for particular plugins
 
  
 
