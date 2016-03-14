@@ -28,11 +28,12 @@ Queue Service	Zaqar
 
 ## OpenStack logical architecture
 There are currently seven core components of OpenStack, how they conceptually interact with each other is shown below:
- 
+
+![Architecture 1](images/openstack_logical_architecture1.jpg)  
 
 All these components and how they relate each other are shown in the simplest way in the below OpenStack logical architecture : 
 
- 
+![Architecture 2](images/openstack_logical_architecture2.jpg) 
 
 
 ## Horizon – Dashboard
