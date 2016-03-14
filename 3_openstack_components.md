@@ -56,6 +56,7 @@ Keystone can be integrated with LDAP and other external authentication providers
 Probably the most known among the projects, it provides virtual servers upon demand. Nova is the most complicated and distributed component of OpenStack. A large number of processes cooperate to turn end user API requests into running virtual machines.
 
 These are the Nova components and their functions:
+
 * nova-api : a RESTful API web service which accepts incoming commands to interact with the OpenStack cloud
 * nova-compute: a worker daemon which creates and terminates virtual machine instances via Hypervisor’s APIs
 * nova-scheduler: takes a request from the queue and determines which compute server host it should run on
