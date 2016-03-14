@@ -1,4 +1,4 @@
-# The “secret ingredient” of a successful project
+# The "secret ingredient" of a successful project
 
 I promised you at the beginning that I would have revealed the “secret ingredient” to deploy a successful OpenStack project. Let me begin with two examples.
 
