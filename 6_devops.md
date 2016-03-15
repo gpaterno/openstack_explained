@@ -4,7 +4,7 @@ So you understood OpenStack, its components and how applications play an importa
 
 The next marketing buzzword that everybody mentions nowadays is DevOps. As you might understand, DevOps is an acronym that stands for “Development” and “Operations”.
 
-**The goal of DevOps is to improve service delivery agility**, promoting communication, collaboration and integration between software developers and IT operations. Rather than seeing these two groups as silos who pass things along but do not really work together, DevOps recognizes the interdependence of software development and IT operations.
+**The goal of DevOps is to improve service delivery agility**, promoting communication, collaboration and integration between software developers and IT operations. Rather than seeing these two groups as silos who pass things along but do not really work together, **DevOps recognizes the interdependence of software development and IT operations**.
 
 In an ideal world, through the use of continuous integration tools and automated tests, a group of developers could bring a new application on-line without any operations team. For example, Flickr developed a DevOps approach to support a business requirement of ten deployments per day. Just for your own information, this kind of approach is also referred as continuous deployment or continuous delivery.
 
