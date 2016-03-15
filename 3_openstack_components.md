@@ -9,20 +9,21 @@ We can think of it as software to power our own Infrastructure as a Service (Iaa
 OpenStack is an umbrella project that can be divided into many sub-components:
 
 
-| Project | Code Name |
-| Dashboard | Horizon |
-| Compute | Nova |
-| Identity | Keystone |
-| Network | Neutron |
-| Image Service | Glance | 
-| Block Storage |Cinder |
-| Object Storage | Swift |
-| Telemetry | Ceilometer |
-| Orchestration | Heat |
-| Database | Trove | 
-| DNS service | Designate |
-| Bare Metal | Ironic |
-| Queue Service | Zaqar | 
+| Project        | Code Name  |
+|----------------|------------|
+| Dashboard      | Horizon    |
+| Compute        | Nova       |
+| Identity       | Keystone   |
+| Network        | Neutron    |
+| Image Service  | Glance     | 
+| Block Storage  | Cinder     |
+| Object Storage | Swift      |
+| Telemetry      | Ceilometer |
+| Orchestration  | Heat       |
+| Database       | Trove      | 
+| DNS service    | Designate  |
+| Bare Metal     | Ironic     |
+| Queue Service  | Zaqar      | 
  
 
 ## OpenStack logical architecture
