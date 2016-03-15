@@ -37,6 +37,7 @@ NFS (any compatible) | SolidFire
 ## Neutron 
 
 Open Source| Proprietary
+--- | ---
 Linux Bridge | VMWare NSX
 Open vSwitch | Brocade
 Midonet | Big Switch
@@ -47,6 +48,7 @@ OpenContrail (Juniper OpenSource) | Alcatel Nuage
 ## Swift 
 
 Open Source	| Proprietary
+--- | ---
 Swift project | EMC Isilon OneFS
 Ceph | NetApp E-Series
 Gluster | Nexenta
