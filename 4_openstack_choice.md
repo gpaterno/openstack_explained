@@ -23,34 +23,31 @@ Docker	|
 
 ## Cinder
 
-Open Source	Proprietary
-LVM	NetApp
-Ceph	IBM (Storwize family/SVC, XIV)
-Gluster	Nexenta
-NFS (any compatible)	SolidFire
-	HP LeftHand/3PAR/MSA
-	Dell EqualLogic/Storage Center
-	EMC VNX/XtremIO
+Open Source	| Proprietary
+--- | ---
+LVM	| NetApp
+Ceph | IBM (Storwize family/SVC, XIV)
+Gluster | Nexenta
+NFS (any compatible) | SolidFire
+ | HP LeftHand/3PAR/MSA
+ | Dell EqualLogic/Storage Center
+ | EMC VNX/XtremIO
 
 
 ## Neutron 
 
-Open Source	Proprietary
-Linux Bridge	VMWare NSX
-Open vSwitch	Brocade
-Midonet	Big Switch
-OpenContrail (Juniper OpenSource)	Alcatel Nuage
-	Cisco Nexus
+Open Source| Proprietary
+Linux Bridge | VMWare NSX
+Open vSwitch | Brocade
+Midonet | Big Switch
+OpenContrail (Juniper OpenSource) | Alcatel Nuage
+ | Cisco Nexus
 
 
 ## Swift 
 
-Open Source	Proprietary
-Swift project	EMC Isilon OneFS
-Ceph	NetApp E-Series
-Gluster	Nexenta
-Hadoop with SwiftFS/Sahara	
-
-
-
- 
+Open Source	| Proprietary
+Swift project | EMC Isilon OneFS
+Ceph | NetApp E-Series
+Gluster | Nexenta
+Hadoop with SwiftFS/Sahara	| 
