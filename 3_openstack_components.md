@@ -9,22 +9,21 @@ We can think of it as software to power our own Infrastructure as a Service (Iaa
 OpenStack is an umbrella project that can be divided into many sub-components:
 
 
-Project                    	Code Name
-Dashboard	Horizon
-Compute	Nova
-Identity	Keystone
-Network	Neutron
-Image Service	Glance
-Block Storage	Cinder
-Object Storage	Swift
-Telemetry	Ceilometer
-Orchestration	Heat
-Database	Trove
-DNS service	Designate
-Bare Metal	Ironic
-Queue Service	Zaqar
+| Project | Code Name |
+| Dashboard | Horizon |
+| Compute | Nova |
+| Identity | Keystone |
+| Network | Neutron |
+| Image Service | Glance | 
+| Block Storage |Cinder |
+| Object Storage | Swift |
+| Telemetry | Ceilometer |
+| Orchestration | Heat |
+| Database | Trove | 
+| DNS service | Designate |
+| Bare Metal | Ironic |
+| Queue Service | Zaqar | 
  
-
 
 ## OpenStack logical architecture
 There are currently seven core components of OpenStack, how they conceptually interact with each other is shown below:
@@ -40,17 +39,17 @@ All these components and how they relate each other are shown in the simplest wa
 
 Horizon provides a modular web-based user interface for all the OpenStack services. With this web GUI, you can perform most operations on your cloud like launching an instance, assigning IP addresses and setting access controls.
 
- 
+![Dashboard](images/openstack_horizon_dashboard.png)
 
 ## Keystone – Identity
 
-Keystone is a framework for authentication and authorization for all the OpenStack services. Keystone handles API requests and provides configurable catalog, policy, token and identity services.
+eystone is a central component for authentication and authorization for all the OpenStack services. Keystone handles API requests and provides configurable catalog, policy, token and identity services.
 
 Keystone also implements the ability to add users to groups (also known as tenants or projects) and to manage permissions between users and groups. Permissions include the ability to launch and terminate instances.
 
-Keystone can be integrated with LDAP and other external authentication providers.
+Keystone can be integrated with LDAP and other external authentication providers as well as be part of an authentication federation using SAML or OpenID with external identity providers, ex: SecurePass (www.seure-pass.net).
  
-
+![Keystone](images/openstack_keystone_identity.png)
 
 ## Nova – Compute
 
@@ -68,14 +67,15 @@ These are the Nova components and their functions:
 * nova-network (now Neutron): a worker daemon very similar to nova-compute. It accepts networking tasks from the queue and then performs tasks to manipulate the network (such as setting up bridging interfaces or changing iptables rules). This functionality is being migrated to Neutron, a separate OpenStack service
 * nova-volume (now Cinder): Manages creation, attaching and detaching of persistent volumes to compute instances. This functionality is being migrated to Cinder, a separate OpenStack service.
   
+![Nova](images/openstack_nova_compute.png)
 
-Nova also interacts with many other OpenStack services: Keystone for authentication, Glance for images and Horizon for the web interface. The Glance interactions are central to OpenStack. The API process can upload and query Glance while nova-compute will download images for launching images.
+Nova also interacts with many other OpenStack services: **Keystone** for authentication, **Glance** for images and **Horizon** for the web interface. The Glance interactions are central to OpenStack. The API process can upload and query Glance while nova-compute will download images for launching images.
 
 Historically, most OpenStack development is done with the most community supported KVM: this allows you to refer to Internet forums to find help on your issues. All the features that are currently supported in KVM are also supported in QEMU.
 
-Microsoft Hyper-V and VMware ESXi too are gaining much support, with Hyper-V now being available with a free license. ESXi can also be used with a free license however API support is limited to READ ONLY without vCenter or an Enterprise license.
+**Microsoft Hyper-V** and **VMware ESXi** too are gaining much support, with Hyper-V now being available with a free license. ESXi can also be used with a free license however API support is limited to READ ONLY without vCenter or an Enterprise license.
 
-Nova has support for XenServer and XCP through the XenAPI virt layer. Note that this does not imply support for other Xen-based platforms such as those shipped with RHEL 6 or SUSE, which is provided via the libvirt layer (i.e. Xen via libvirt).
+Nova has support for **XenServer** and XCP through the XenAPI virt layer. Note that this does not imply support for other Xen-based platforms such as those shipped with RHEL 6 or SUSE, which is provided via the libvirt layer (i.e. Xen via libvirt).
 
 Nova also supports bare metal provisioning through the Ironic project, that means it is possible to deploy to hardware in the same way the end user deploys virtual machines. By default, it will use PXE and IPMI in concert to provision and turn on/off machines, but Ironic also supports vendor-specific plugins which may implement additional functionality. Some vendors, most notably HP Helion, use Ironic to deploy OpenStack itself.
 
@@ -91,6 +91,8 @@ List of components and their functions:
 
 Glance accepts API requests for images (or image metadata) from end users or Nova components,  and can store its disk files in the object storage service, Swift or other storage repository.
 
+![Glance](images/openstack_glance_image_store.png)
+
 
 ## Neutron – Network
 
@@ -101,12 +103,9 @@ Neutron provides “network connectivity as a service” between interface devic
 * it also has a message queue to route info between neutron-server and various agents
 * it has a neutron database to store networking state for particular plugins
 
- 
+![Neutron](images/openstack_neutron_network.png)
 
 Neutron will interact mainly with Nova, where it will provide networks and connectivity for its instances.
-
-
- 
 
 
 ## Cinder – Block Storage
@@ -119,13 +118,9 @@ Cinder allows block devices to be exposed and connected to compute instances for
 * the messages queue routes information between Cinder processes
 * a cinder database stores volumes state
 
- 
+![Cinder](images/openstack_cinder_block_storage.png) 
 
 Like Neutron, Cinder will mainly interact with Nova, providing volumes for its instances.
-
-
- 
-
 
 ## Swift – Object Storage
 
@@ -138,18 +133,16 @@ Note: Object Storage is not a traditional file system, but rather a distributed 
 * Container servers manage mapping of containers, folders, within the object store service.
 * Object servers manage actual objects, files, on the storage nodes.
 
- 
+![Swift](images/openstack_swift_object_storage.png)
 
 Also replication services run to provide consistency and availability across the cluster, audit and update.
 
+# Ceilometer  - Telemetry
+The required steps to bill for usage in a cloud environment are **metering, rating and billing**. Because the provider's requirements may be far too specific for a shared solution, rating and billing solutions cannot be designed as a common module that satisfies all possible scenarios. Providing users with measurements on cloud services is required to meet the "measured service" definition of cloud computing.
 
-Ceilometer  - Telemetry
-The required steps to bill for usage in a cloud environment are metering, rating and billing. Because the provider's requirements may be far too specific for a shared solution, rating and billing solutions cannot be designed as a common module that satisfies all possible scenarios. Providing users with measurements on cloud services is required to meet the "measured service" definition of cloud computing.
+The Telemetry module was originally designed to support billing systems for OpenStack cloud resources. This project only covers the metering portion of the required processing for billing. The module **collects information about the system usage** and stores it in the form of samples in order to provide data about anything that can be billed. It does so by both listening to event on the message queue and by polling information out of the various components.
 
-The Telemetry module was originally designed to support billing systems for OpenStack cloud resources. This project only covers the metering portion of the required processing for billing. The module collects information about the system and stores it in the form of samples in order to provide data about anything that can be billed.
-
- 
-
+![Telemetry](images/openstack_ceilometer_telemetry.png)
 
 The list of metrics is continuously growing, which makes it possible to use the data collected by Telemetry for many more purposes other than billing. For example Heat can autoscale resources when Ceilometers triggers an alarm, for example adding more front-end web servers when CPU utilization is more than 70% for 5 minutes.
 
