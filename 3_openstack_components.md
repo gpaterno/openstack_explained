@@ -133,10 +133,10 @@ Object store allows you to store or retrieve files. It provides a fully distribu
 
 Note: Object Storage is not a traditional file system, but rather a distributed storage system for static data such as virtual machine images, or photos, e-mails, backups and archives.
 
-●	Proxy server (swift-proxy-server) accepts incoming requests, like files to upload, modifications to metadata or container creation; it also serves files and provides container listing
-●	Accounts server manage accounts defined within the object storage service.
-●	Container servers manage mapping of containers, folders, within the object store service.
-●	Object servers manage actual objects, files, on the storage nodes.
+* Proxy server (swift-proxy-server) accepts incoming requests, like files to upload, modifications to metadata or container creation; it also serves files and provides container listing
+* Accounts server manage accounts defined within the object storage service.
+* Container servers manage mapping of containers, folders, within the object store service.
+* Object servers manage actual objects, files, on the storage nodes.
 
  
 
