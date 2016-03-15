@@ -159,5 +159,5 @@ Although the former ones are the most relevant, there are three other projects w
 
 * **Trove** is a database-as-a-service provisioning relational and non-relational database engines. It allows an agnostic access to databases, currently supports MySQL and PostgreSQL, but vendors like Oracle and Microsoft might provide a Trove plugin for their databases in future.
 * **Ironic** (Bare Metal Provisioning), is an incubated OpenStack project that aims to provision bare metal machines instead of virtual machines. Ironic is currently in use by HP Helion.
-* Zaqar (Multiple Tenant Cloud Messaging), is a multi-tenant cloud messaging service for Web developers. Zaqar was formerly known as Marconi.
+* **Zaqar** (Multiple Tenant Cloud Messaging), is a multi-tenant cloud messaging service for Web developers. Zaqar was formerly known as Marconi.
 * **Designate** provides a DNS as a Service for OpenStack.
