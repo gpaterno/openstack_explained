@@ -1,8 +1,8 @@
 # OpenStack Regions and Availability Zones
 
-OpenStack was made from the ground up to scale to thousands of nodes and span different datacenters and geographical regions. For this reason, Openstack clouds can be divided in three main hierarchical zones: Regions, Availability Zones and Host Aggregates.
+OpenStack was made from the ground up to scale to thousands of nodes and span different datacenters and geographical regions. For this reason, Openstack clouds can be divided in three main hierarchical zones: **Regions**, **Availability Zones** and **Host Aggregates**.
 
- 
+![Regions](images/openstack_regions.jpg) 
 
 
 ## Region
