@@ -1,6 +1,6 @@
 # Introduction to OpenStack 
 
-The great advantage of OpenStack is that the end customer can choose whether to use the reference implementations for each project or a vendor-specific implementation for each one. The promise of OpenStack is the interoperability amongst different components from different vendors or open source projects, giving the customer the choice to find out what is the best solution for their own needs.
+The great advantage of OpenStack is that **the end customer can choose** whether to use the reference implementations for each project or a vendor-specific implementation for each one. T**he promise of OpenStack is the interoperability amongst different components** from different vendors or open source projects, giving the customer the choice to find out what is the best solution for their own needs.
 
 OpenStack could bring the following benefits to you:
 
