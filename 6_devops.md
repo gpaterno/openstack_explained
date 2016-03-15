@@ -1,14 +1,18 @@
 # DevOps: to the infinity and beyond
 
-So you understood OpenStack, its components and how applications play an important role in the cloud. Before revealing to you how to be successful with OpenStack, there is another important piece I want you to understand.
+So you have read about OpenStack and you are really eager to implement it. But let us step back and understand why you are willing to embrace the cloud. You might think of several reasons, but -- judging by my experience -- everything comes down to two root causes:
 
-The next marketing buzzword that everybody mentions nowadays is DevOps. As you might understand, DevOps is an acronym that stands for "Development" and "Operations".
+* You are looking to take advantage of the fast provisioning of the infrastructure, either for savings, speed, or both
+* Your applications may have varying demand patterns, resulting in the need of increased computing power during some periods. You may want to take advantage of the scaling capabilities of Cloud to fire up new instances of key modules at peak periods, shutting them down when not needed, freeing up infrastructure resources for other tasks and reducing the TCO
 
-The goal of DevOps is to improve service delivery agility, promoting communication, collaboration and integration between software developers and IT operations.  Rather than seeing these two groups as silos who pass things along but do not really work together, DevOps recognizes the interdependence of software development and IT operations.
 
-In an ideal world, through the use of continuous integration tools and automated tests, a group of developers could bring a new application on-line without any operations team. For example, Flickr developed a DevOps approach to support a business requirement of ten deployments per day. Just for your own information, this kind of approach is also referred as continuous deployment or continuous delivery.
+Most of the customers just want a fast provisioning mechanism of the infrastructure. Do not get me wrong, this is perfectly fine and OpenStack gets the job done.
 
-Discussing development and agile methodologies is not within the scope of this publication, but this is  one thing you have to understand and keep in mind, no matter if you are an IT manager, developer or system administrator.
+But you will get the full benefit of the cloud when you’ll have an application that might be in need of resources on-demand. Think about a sports news portal when the World Cup is on, the invoicing and billing at the end of the month or a surge in the need to process a data from devices.
 
-If you decided to embrace the cloud in full and you are thinking of adapting your application to take advantage of it, then every single aspect of IT have to be carefully analyzed. Development, whether you do it internally or outsourced, must be taken into consideration. Also the way your company has been organized has to change: did I mention before Cloud is a huge shift?
- 
+Wouldn’t it not be nice, given the detected increasing loads, to have the **application scale automatically to cope with the requests**? Believe it or not, it is not magic and it is totally feasible. Netflix did it and I can name a lot of other SaaS systems that are doing it. There is only one constraint: you have to be in control of the source code of your applications. If you bought your application “as is”, contact your vendor, but there are yet few chances that you can follow this pattern.
+
+Being cloud aware for an application also means that it need to be implemented with self resiliency in mind.
+In case you have the source code, you can adapt your application to take full advantage of your new environment. In this scenario, you will have to intervene more into your code as you will need to ensure that **the application can take full advantage of the environment**, reconfiguring load balancers, dynamically allocating resources and etc. There are some “tricks” that an application has to adopt to be “cloudish”, but is outside of the scope of this publication.
+
+It’s quite common that a customer might decide to have a phased approach to the cloud, starting to take advantage of the fast provisioning and then transforming the application to adapt it to the cloud. The cloud is a long journey and it can be successful, are you ready for it?
