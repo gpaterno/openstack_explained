@@ -10,4 +10,4 @@ In an ideal world, through the use of continuous integration tools and automated
 
 Discussing development and agile methodologies is not within the scope of this publication, but this is one thing you have to understand and keep in mind, no matter if you are an IT manager, developer or system administrator.
 
-If you decided to embrace the cloud in full and you are thinking of adapting your application to take advantage of it, then** every single aspect of IT have to be carefully analyzed**. Development, whether you do it internally or outsourced, must be taken into consideration. Also the way your company has been organized has to change: did I mention before **Cloud is a huge shift**?
+If you decided to embrace the cloud in full and you are thinking of adapting your application to take advantage of it, then **every single aspect of IT have to be carefully analyzed**. Development, whether you do it internally or outsourced, must be taken into consideration. Also the way your company has been organized has to change: did I mention before **Cloud is a huge shift**?
