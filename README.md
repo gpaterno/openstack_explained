@@ -27,3 +27,26 @@ This work is regulated under a very special [[LICENSE]]. In summary: contributio
 > "Giuseppe has done a great job of creating an important source of information on OpenStack technology while also raising money for disadvantaged children. I would encourage anyone involved in the IT industry to download this ebook and in so doing support this great initiative." - **Jeff Cotten, Managing Director, Rackspace International**
 
 > "The OpenStack Project is one of the great examples for the dynamic of open source solutions and makes cloud technology available to organizations regardless of their size and location. Being one of the major contributors for the project, we at SUSE appreciate Giuseppe Paternó clear and concise explanation of OpenStack and it’s architecture. For those looking for an introduction to OpenStack, this will be a valuable resource. We also highly appreciate Giuseppe’s charitable support to provide clean drinking water for Children in Africa." - **Ralf Flaxa, Vice President of Engineering, SUSE**
+
+## About the author
+
+Giuseppe Paterno' is an OpenStack consultant, rated #12 in the OpenStack community.
+
+Giuseppe mostly act as a trusted advisor of CIO and he's also CEO/owner of two companies: GARL (Switzerland/UK) and Alchemy Solutions (UK). He’s considered by HP and Forrester Research among the most important IT consultants in OpenStack and the cloud.
+
+Through his extensive 20+ years experience in IT, he helps customers to embrace cloud easily, securely and risk-free. Most European telecommunications, government and finance organizations are amongst his customers. Giuseppe has a strong background in the Open Source world, where he played an important role for Canonical (the company behind Ubuntu), RedHat, Sun Microsystems, and IBM.
+
+He also has an extensive knowledge in information security: this is reason behind his role as Visiting Professor and Researcher at the University of Trinity College Dublin in 2009.
+
+* Web Site: (http://www.gpaterno.com)
+* Twitter: [@gpaterno](https://twitter.com/gpaterno)
+* Facebook Page: (https://www.facebook.com/gpaterno.pro)
+* E-mail: gpaterno@gpaterno.com
+
+
+## Contributors
+
+* Guido Bolognesi
+* Sab Knight
+* Francesco Vollero
+* Nicolas Barcet
