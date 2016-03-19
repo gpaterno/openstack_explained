@@ -30,9 +30,9 @@ This work is regulated under a very special [[LICENSE]]. In summary: contributio
 
 ## About the author
 
-Giuseppe Paterno' is an OpenStack consultant, rated #12 in the OpenStack community.
+Giuseppe Paterno' is an OpenStack consultant, [rated #12](https://www.bigpulse.com/pollresults?code=53195PyvG2QCq6xUmN7DTzjL) in the OpenStack community in 2015.
 
-Giuseppe mostly act as a trusted advisor of CIO and he's also CEO/owner of two companies: GARL (Switzerland/UK) and Alchemy Solutions (UK). He’s considered by HP and Forrester Research among the most important IT consultants in OpenStack and the cloud.
+Giuseppe mostly act as a trusted advisor of CIO and he's also CEO/owner of two companies: [GARL](http://www.garl.ch) (Switzerland/UK) and [Alchemy Solutions](http://alchemy.solutions) (UK). He’s considered by HP and Forrester Research among the most important IT consultants in OpenStack and the cloud.
 
 Through his extensive 20+ years experience in IT, he helps customers to embrace cloud easily, securely and risk-free. Most European telecommunications, government and finance organizations are amongst his customers. Giuseppe has a strong background in the Open Source world, where he played an important role for Canonical (the company behind Ubuntu), RedHat, Sun Microsystems, and IBM.
 
@@ -42,6 +42,7 @@ He also has an extensive knowledge in information security: this is reason behin
 * Twitter: [@gpaterno](https://twitter.com/gpaterno)
 * Facebook Page: (https://www.facebook.com/gpaterno.pro)
 * E-mail: gpaterno@gpaterno.com
+
 
 
 ## Contributors
