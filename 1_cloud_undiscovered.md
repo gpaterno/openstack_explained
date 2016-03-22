@@ -8,6 +8,8 @@ While Cloud implies a virtualized environment, virtualization is not a cloud. Le
 
 The NIST definition goes on to define the essential characteristics of clouds (i.e., on-demand, network access, multitenancy, elasticity, and metering). It continues by defining three service models: **software as a service** (SaaS), **platform as a service **(PaaS), and **infrastructure as a service** (IaaS). It also identifies four main deployment models: private cloud, public cloud, hybrid cloud, and community cloud.
 
+![SaasPaasIaas](images/saas-paas-iaas.jpg)
+
 **SaaS** refers to online application hosting: users will access the application interface over the Internet,  all the work that happens in the background to make the application available and scalable is hidden from the end user. Gmail (and most Google services, including Calendar and Docs), SalesForce and SecurePass are typical SaaS examples. 
 
 **PaaS** represents what we used to call middleware, and makes the link between the end-user application and the underlying infrastructure that it is running on. A PaaS solution is aimed at developers who do not want to worry about the infrastructure. PaaS is still a growing area and interesting players such as Openshift, CloudFoundry (and derivatives) and Cloudify.

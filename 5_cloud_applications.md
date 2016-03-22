@@ -10,6 +10,8 @@ Most of the customers just want a fast provisioning mechanism of the infrastruct
 
 But you will get the full benefit of the cloud when you’ll have an application that might be in need of resources on-demand. Think about a sports news portal when the World Cup is on, the invoicing and billing at the end of the month or a surge in the need to process a data from devices.
 
+![CloudApplications](images/appdev.jpg)
+
 Wouldn’t it not be nice, given the detected increasing loads, to have the **application scale automatically to cope with the requests**? Believe it or not, it is not magic and it is totally feasible. Netflix did it and I can name a lot of other SaaS systems that are doing it. There is only one constraint: you have to be in control of the source code of your applications. If you bought your application “as is”, contact your vendor, but there are yet few chances that you can follow this pattern.
 
 Being cloud aware for an application also means that it need to be implemented with self resiliency in mind.
