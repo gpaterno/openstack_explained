@@ -16,9 +16,10 @@ This work is regulated under a very special [[LICENSE]]. In summary: contributio
 * [OpenStack components](3_openstack_components.md)
 * [OpenStack Regions and Availability Zones](3_openstack_regions.md)
 * [The choice in OpenStack](4_openstack_choice.md)
-* [Applications in the cloud](5_cloud_applications.md)
-* [DevOps: to the infinity and beyond](6_devops.md)
-* [The "secret ingredient" of a successful project](7_secret_ingredient.md)
+* [Dual-Mode or Hybrid IT](5_dualmode_hybrid.md)
+* [Applications in the cloud](6_cloud_applications.md)
+* [DevOps: to the infinity and beyond](7_devops.md)
+* [The "secret ingredient" of a successful project](8_secret_ingredient.md)
 
 ## Testimonials
 
