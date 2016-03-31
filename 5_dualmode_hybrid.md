@@ -19,9 +19,9 @@ The usual two ways is either run "parallel worlds" by using an external Cloud Ma
 
 Notes: two regions scenario
 
-## A working example
+## A real-life example
 
-Let me give you a more complicated example of a client of mine, who is very conservative, and also where Microsoft given the option to use Azure services as part of their global agreement.
+Let me give you a more complicated example of a client of mine in the oil&gas industry. To get things a little more complcated, Microsoft given the option to use Azure services as part of their global agreement and therefore was key to be integrated.
 
 ![](images/hybrid_dualmode_it.jpg)
 
