@@ -1,21 +1,25 @@
 # Dual-Mode or Hybrid IT
 
 
-Dual-Mode IT, hybrid-cloud or even multi-cloud are the different "facets" in which IT is evolving.
 
-As a strategic consultant for OpenStack and private clouds, I have the privilege to meet many CIOs and CEOs across Europe. I can say that the cloud –be it private or public- now begins to be "accepted" in the enterprises, but often for the wrong reason. 
-As a matter of fact, very often saving is the driving factor for which I am called: the objective is usually to decrease VMWare licensing fees or find a more convenient form of storage compared to traditional SAN. The latter is especially true in a world where data is multiplied dramatically.
-
-While the adoption of technologies such as OpenStack definitely involve cost savings, the real point of greater saving is bringing more 'agility' to the business and streamlining the internal processes, which helps to relief the daily pains and be able to (finally) to refocus on the real core business.
-This is the real the key to interpret cloud correctly and not to remain trapped in the “cloud” buzzword.
-
-Let me give an example which does not admit interpretations. One of my banking clients, for example, used to take 120 days to make a single virtual machine to the ground. Other companies spend an average of 60-80 days. The reason is obvious: the internal processes are so plastered that for every action it takes a ticket. Just sum the time to create the virtual machine, install the of operating systems, network configuration, compliance, security, install the software and its database and you easily get those days.
-
-A standardized infrastructure brings many benefits: the combination of the cloud and automation with tools such Ansible, Puppet and Chef –just to name some "industry standards"-  helps to streamline. These tools helps speeding up provisioning, change management, as well as helping integrating with the rest of IT tools such as CMDB and monitoring. Security also automatically benefits from such tools because "automatic compliance" is also possible.
-
-It’s no doubt that changes won’t be made overnight. Most of my clients ask me to drive a long-term change strategy. Here we come to what is called "Dual-Mode IT", that is running both traditional and new “cloudish” IT.
+It’s no doubt that changes in the ifrastructure and -in general- in the IT won’t be made overnight. Most of my clients ask me to drive a long-term change strategy. Dual-Mode IT, hybrid-cloud or even multi-cloud are the different "facets" in which IT is evolving, but the key mesasge is that is important to run both traditional and new “cloudish” IT in the initial phase of the adoption.
 
 Typically what I do with my team is to start changing the test and development infrastructure, because it’s non-critical and helps bringing more confidence while adopting new and agile technologies.
+
+How the two worlds can interact really depends from customer to customer.
+The usual two ways is either run "parallel worlds" by using an external Cloud Management Portal (or CMP) or by using OpenStack itself as an orchestrator.
+
+## Cloud management portal as orchestrator
+
+**TBD**
+
+## OpenStack as orchestrator
+
+**TBD**
+
+Notes: two regions scenario
+
+## A working example
 
 Let me give you a more complicated example of a client of mine, who is very conservative, and also where Microsoft given the option to use Azure services as part of their global agreement.
 
