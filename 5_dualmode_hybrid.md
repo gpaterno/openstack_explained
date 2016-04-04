@@ -31,18 +31,26 @@ With these kind of scenarios, the use of internal or external doesn’t change t
 
 It’s no doubt that service providers and outsourcers were the first who understood that the adoption of open standards and agile "DevOps" methodologies bring many benefits, but also enterprises from small to large will be able to benefit as well.
 
+Example of Cloud Management Platforms:
+
+* [HP Cloud Service Automation (CSA)](http://www8.hp.com/us/en/software-solutions/cloud-service-automation/)
+* [ManageIQ](http://manageiq.org/) or the commercial version of [RedHat CloudForms](https://www.redhat.com/en/technologies/cloud-computing/cloudforms)
+* [Scalr](http://www.scalr.com/)
+
 
 ## OpenStack as orchestrator
 
 In this scenario, OpenStack is used as the control plane to manage a multi-hypervisor cloud, running both vSphere and alternate hypervisors such as KVM or Xen. This approach provides common, self-service provisioning and API access. It consolidates cloud management while allowing applications to be hosted on the environment best suited for them. 
 
-To be honest, this is my favourite way of integrating VMWare, because OpenStack acts like a single point of APIs for all workloads. The drawbacks is that it only applies to VMWare and it is preferable to run a separate VMWare cluster rather of the one you already deployed. Yet, a VMWare workload will be certified/
+To be honest, this is my favourite way of integrating VMWare, because OpenStack acts like a single point of APIs for all workloads. The drawbacks is that it only applies to VMWare and it is preferable to run a separate VMWare cluster rather of the one you already deployed. Yet, a VMWare workload will be certified.
 
- With OpenStack Horizon, the user is provided with a consistent experience  while offering IT the flexibility to efficiently manage the overall infrastructure and resource utilization.
+With OpenStack Horizon, the user is provided with a consistent experience  while offering IT the flexibility to efficiently manage the overall infrastructure and resource utilization. OpenStack supports VMWare integration through vCenter and does not support standalone ESXi hypervisors, like in the following drawing:
+
+![](vmware-nova-driver-architecture.jpg)
 
 Talking about a well-known success story, Intel IT’s hosting organization runs a large enterprise private cloud supporting mostly traditional enterprise workloads such as ERP, a mix of custom in-house developed applications, and commercial off-the-shelf (COTS) applications. 
 
-In 2010, they implemented a custom privatecloud - a VMware-based virtualization of the data center server environment with self-service capabilities - built from existing available components. Hosting operated a separate OpenStack cloud servicing a greenfield implementation of KVM and Ceph for provisioning both internal and externally-facing workloads.
+In 2010, they implemented a custom private cloud - a VMware-based virtualization of the data center server environment with self-service capabilities - built from existing available components. Hosting operated a separate OpenStack cloud servicing a greenfield implementation of KVM and Ceph for provisioning both internal and externally-facing workloads.
 
 The second and current instantiation of their private cloud is built upon OpenStack as the datacenter control plane to provide an abstraction layer to the legacy cloud infrastructure. This allows Intel to end-of-life the custom automation built for the initial private cloud.
 
@@ -56,9 +64,9 @@ The way I usually integrate the two "worlds" is by providing two OpenStack regio
 
 ** Note ** Limitations.
 
-The upstream OpenStack distribution supports VMWare out of the box by integrating with VMWare vsphere management server.
+By adopting VMware vSphere and ESXi, you will have in some limitations in using OpenStack. Namely, you can't run a storage different from what is supported by VMware, i.e. you can't use Swift for example. Same thing on the network side. The only supported SDN is through NSX and without it you will be able to use only flat VLANs or flat DHCP. Glance cannot be shared between environments and is limited to the VMWare datastore.
 
-If you want to have a commercial support, the following OpenStack distributions support the VMware ESXi hypervisor in a cloud environment:
+The upstream OpenStack distribution supports VMWare out of the box by integrating with VMWare vsphere management server. If you want to have a commercial support, the following OpenStack distributions support the VMware ESXi hypervisor in a cloud environment:
 
 * HP Helion OpenStack
 * Mirantis OpenStack Private Cloud Software
