@@ -59,10 +59,7 @@ They decided on an OpenStack management cluster to leverage the existing infrast
 
 The way I usually integrate the two "worlds" is by providing two OpenStack regions, one based on vSphere and the other based on KVM. OpenStack CLI and REST API will control VMware compute, storage and networking resources for simplified, more agile cloud automation while retaining use of VMware tools like vMotion. 
 
-[region ]
-
-
-** Note ** Limitations.
+![](images/vmware_multiregion.png)
 
 By adopting VMware vSphere and ESXi, you will have in some limitations in using OpenStack. Namely, you can't run a storage different from what is supported by VMware, i.e. you can't use Swift for example. Same thing on the network side. The only supported SDN is through NSX and without it you will be able to use only flat VLANs or flat DHCP. Glance cannot be shared between environments and is limited to the VMWare datastore.
 
