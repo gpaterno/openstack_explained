@@ -46,7 +46,7 @@ To be honest, this is my favourite way of integrating VMWare, because OpenStack 
 
 With OpenStack Horizon, the user is provided with a consistent experience  while offering IT the flexibility to efficiently manage the overall infrastructure and resource utilization. OpenStack supports VMWare integration through vCenter and does not support standalone ESXi hypervisors, like in the following drawing:
 
-![](vmware-nova-driver-architecture.jpg)
+![](images/vmware-nova-driver-architecture.jpg)
 
 Talking about a well-known success story, Intel IT’s hosting organization runs a large enterprise private cloud supporting mostly traditional enterprise workloads such as ERP, a mix of custom in-house developed applications, and commercial off-the-shelf (COTS) applications. 
 
