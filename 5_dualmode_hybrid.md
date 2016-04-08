@@ -48,7 +48,7 @@ With OpenStack Horizon, the user is provided with a consistent experience  while
 
 ![](images/vmware-nova-driver-architecture.jpg)
 
-Talking about a well-known success story, Intel IT’s hosting organization runs a large enterprise private cloud supporting mostly traditional enterprise workloads such as ERP, a mix of custom in-house developed applications, and commercial off-the-shelf (COTS) applications. 
+Talking about a well-known success story, Intel IT’s hosting organization runs a large enterprise private cloud supporting mostly traditional enterprise workloads such as ERP, a mix of custom in-house developed applications, and commercial off-the-shelf applications. 
 
 In 2010, they implemented a custom private cloud - a VMware-based virtualization of the data center server environment with self-service capabilities - built from existing available components. Hosting operated a separate OpenStack cloud servicing a greenfield implementation of KVM and Ceph for provisioning both internal and externally-facing workloads.
 
